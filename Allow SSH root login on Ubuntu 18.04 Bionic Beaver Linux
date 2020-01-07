@@ -1,0 +1,4 @@
+Allow SSH root login on Ubuntu 18.04 Bionic Beaver Linux
+
+sudo sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+sudo service ssh restart
